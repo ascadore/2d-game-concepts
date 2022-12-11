@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dont get caught</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+    
+</head>
+<body>
+  <div style="position: relative; display: inline-block; padding: 30px;">
+    <div style="position: absolute; display: flex; align-items: center";>
+    <!-- player health-->
+    <div  style="position: relative; background-color: white; height: 50px; width: 462px; display: flex; justify-content: flex-end">
+      <div id='playerHealth' style="position: absolute; background-color:blue; height: 50px; width: 462px"></div>
+    </div>
+    <!-- timer-->
+    <div id="timer" style= "background-color: green; height: 100px; width: 100px; display: flex; align-items: center; justify-content: center">25</div>
+    <!-- enemy health-->
+    <div style="position: relative; background-color: white; height: 50px; width: 462px; display: flex; justify-content: flex-start">
+      <div id='enemyHealth' style="position: absolute; background-color:red; height: 50px; width: 462px"></div>
+    </div>
+
+    </div>
+    <div id="startscreen" style="position: absolute; align-items: center; justify-content: center; ">
+      <img src="controls.png" width="1024" height="576" style="position: relative">
+      <button  onclick='play()' style="position: absolute; justify-content: center; align-items: center ">play me</button>
+    </div>
+    <div id="output" style="position: absolute;display:flex; align-items: center; justify-content: center;color: aliceblue; font-size: x-large; top: 0;bottom: 0; left: 0; right:0; "></div>
+   <canvas>
+   </canvas>
+  </div>
+  
+  <script src="run.js"></script>
+  
+</body>
+</html>
